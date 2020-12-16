@@ -1,0 +1,480 @@
+
+/home/damon/UNSA/SoftwareII/express-locallibrary-tutorial/controllers/bookController.js
+    1:1    error  Unexpected var, use let or const instead                                      no-var
+    2:1    error  Unexpected var, use let or const instead                                      no-var
+    3:1    error  Unexpected var, use let or const instead                                      no-var
+    4:1    error  Unexpected var, use let or const instead                                      no-var
+    6:13   error  A space is required after ','                                                 comma-spacing
+    6:35   error  `express-validator` import should occur before import of `../models/book`     import/order
+    6:43   error  Strings must use singlequote                                                  quotes
+    8:1    error  Unexpected var, use let or const instead                                      no-var
+    8:13   error  `async` import should occur before import of `../models/book`                 import/order
+   10:25   error  Missing space before function parentheses                                     space-before-function-paren
+   10:36   error  Block must not be padded by blank lines                                       padded-blocks
+   12:1    error  Expected indentation of 2 spaces but found 4                                  indent
+   13:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   13:9    error  Expected method shorthand                                                     object-shorthand
+   13:29   error  Missing space before function parentheses                                     space-before-function-paren
+   14:1    error  Expected indentation of 6 spaces but found 12                                 indent
+   14:35   error  A space is required after ','                                                 comma-spacing
+   15:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   16:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   16:9    error  Expected method shorthand                                                     object-shorthand
+   16:38   error  Missing space before function parentheses                                     space-before-function-paren
+   17:1    error  Expected indentation of 6 spaces but found 12                                 indent
+   17:43   error  A space is required after ','                                                 comma-spacing
+   18:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   19:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   19:9    error  Expected method shorthand                                                     object-shorthand
+   19:48   error  Missing space before function parentheses                                     space-before-function-paren
+   20:1    error  Expected indentation of 6 spaces but found 12                                 indent
+   20:41   error  A space is required after '{'                                                 object-curly-spacing
+   20:49   error  Missing space before value for key 'status'                                   key-spacing
+   20:60   error  A space is required before '}'                                                object-curly-spacing
+   20:61   error  A space is required after ','                                                 comma-spacing
+   21:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   22:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   22:9    error  Expected method shorthand                                                     object-shorthand
+   22:31   error  Missing space before function parentheses                                     space-before-function-paren
+   23:1    error  Expected indentation of 6 spaces but found 12                                 indent
+   23:37   error  A space is required after ','                                                 comma-spacing
+   24:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   25:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   25:9    error  Expected method shorthand                                                     object-shorthand
+   25:30   error  Missing space before function parentheses                                     space-before-function-paren
+   26:1    error  Expected indentation of 6 spaces but found 12                                 indent
+   26:36   error  A space is required after ','                                                 comma-spacing
+   27:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   28:1    error  Expected indentation of 2 spaces but found 4                                  indent
+   28:8    error  Unexpected function expression                                                prefer-arrow-callback
+   28:16   error  Missing space before function parentheses                                     space-before-function-paren
+   29:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   30:1    error  Expected indentation of 2 spaces but found 4                                  indent
+   33:1    error  More than 1 blank line not allowed                                            no-multiple-empty-lines
+   35:29   error  Missing space before function parentheses                                     space-before-function-paren
+   35:46   error  Block must not be padded by blank lines                                       padded-blocks
+   38:30   error  Unexpected function expression                                                prefer-arrow-callback
+   38:30   error  Expected to return a value at the end of function                             consistent-return
+   38:45   error  Identifier 'list_books' is not in camel case                                  camelcase
+   39:16   error  Requires a space after '{'                                                    block-spacing
+   39:33   error  Closing curly brace does not appear on the same line as the subsequent block  brace-style
+   39:33   error  Requires a space before '}'                                                   block-spacing
+   39:33   error  Missing semicolon                                                             semi
+   39:34   error  Trailing spaces not allowed                                                   no-trailing-spaces
+   40:12   error  Unnecessary 'else' after 'return'                                             no-else-return
+   41:1    error  Expected indentation of 8 spaces but found 12                                 indent
+   42:1    error  Expected indentation of 8 spaces but found 12                                 indent
+   42:68   error  Extra space before value for key 'book_list'                                  key-spacing
+   42:81   error  A space is required before '}'                                                object-curly-spacing
+   43:1    error  Expected indentation of 6 spaces but found 8                                  indent
+   44:8    error  Block must not be padded by blank lines                                       padded-blocks
+   49:31   error  Missing space before function parentheses                                     space-before-function-paren
+   49:48   error  Block must not be padded by blank lines                                       padded-blocks
+   51:1    error  Expected indentation of 2 spaces but found 4                                  indent
+   52:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   52:9    error  Expected method shorthand                                                     object-shorthand
+   52:23   error  Missing space before function parentheses                                     space-before-function-paren
+   52:34   error  Block must not be padded by blank lines                                       padded-blocks
+   54:1    error  Expected indentation of 6 spaces but found 12                                 indent
+   55:1    error  Expected indentation of 8 spaces but found 14                                 indent
+   56:1    error  Expected indentation of 8 spaces but found 14                                 indent
+   57:1    error  Expected indentation of 8 spaces but found 14                                 indent
+   58:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   59:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   59:9    error  Expected method shorthand                                                     object-shorthand
+   59:32   error  Missing space before function parentheses                                     space-before-function-paren
+   59:43   error  Block must not be padded by blank lines                                       padded-blocks
+   61:1    error  Expected indentation of 6 spaces but found 10                                 indent
+   61:31   error  Unnecessarily quoted property 'book' found                                    quote-props
+   62:1    error  Expected indentation of 8 spaces but found 10                                 indent
+   63:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   64:1    error  Expected indentation of 2 spaces but found 4                                  indent
+   64:8    error  Unexpected function expression                                                prefer-arrow-callback
+   64:8    error  Expected to return a value at the end of function                             consistent-return
+   64:16   error  Missing space before function parentheses                                     space-before-function-paren
+   65:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   65:13   error  'err' used outside of binding context                                         block-scoped-var
+   65:32   error  'err' used outside of binding context                                         block-scoped-var
+   66:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   66:25   error  Operator '==' must be spaced                                                  space-infix-ops
+   67:1    error  Expected indentation of 6 spaces but found 12                                 indent
+   67:13   error  All 'var' declarations must be at the top of the function scope               vars-on-top
+   67:13   error  Unexpected var, use let or const instead                                      no-var
+   67:17   error  'err' is already defined                                                      no-redeclare
+   68:1    error  Expected indentation of 6 spaces but found 12                                 indent
+   69:1    error  Expected indentation of 6 spaces but found 12                                 indent
+   70:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   71:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   72:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   72:68   error  Extra space before value for key 'book'                                       key-spacing
+   72:124  error  There should be no space before this paren                                    space-in-parens
+   73:1    error  Expected indentation of 2 spaces but found 4                                  indent
+   73:8    error  Block must not be padded by blank lines                                       padded-blocks
+   78:35   error  Missing space before function parentheses                                     space-before-function-paren
+   78:52   error  Block must not be padded by blank lines                                       padded-blocks
+   80:1    error  Expected indentation of 2 spaces but found 4                                  indent
+   81:1    error  Expected indentation of 2 spaces but found 4                                  indent
+   82:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   82:9    error  Expected method shorthand                                                     object-shorthand
+   82:26   error  Missing space before function parentheses                                     space-before-function-paren
+   83:1    error  Expected indentation of 6 spaces but found 12                                 indent
+   84:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   85:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   85:9    error  Expected method shorthand                                                     object-shorthand
+   85:25   error  Missing space before function parentheses                                     space-before-function-paren
+   86:1    error  Expected indentation of 6 spaces but found 12                                 indent
+   87:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   88:1    error  Expected indentation of 2 spaces but found 4                                  indent
+   88:8    error  Unexpected function expression                                                prefer-arrow-callback
+   88:8    error  Expected to return a value at the end of function                             consistent-return
+   88:16   error  Missing space before function parentheses                                     space-before-function-paren
+   89:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   90:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   90:55   error  A space is required after ','                                                 comma-spacing
+   90:64   error  Missing space before value for key 'authors'                                  key-spacing
+   90:88   error  Missing space before value for key 'genres'                                   key-spacing
+   91:1    error  Expected indentation of 2 spaces but found 4                                  indent
+   91:8    error  Block must not be padded by blank lines                                       padded-blocks
+   97:1    error  Expected indentation of 2 spaces but found 4                                  indent
+   98:1    error  Expected indentation of 2 spaces but found 4                                  indent
+   99:1    error  Expected indentation of 4 spaces but found 8                                  indent
+   99:9    error  Expected space(s) after "if"                                                  keyword-spacing
+   99:47   error  Missing space before opening brace                                            space-before-blocks
+  100:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  100:13   error  Expected space(s) after "if"                                                  keyword-spacing
+  100:13   error  Expected { after 'if' condition                                               curly
+  100:37   error  Operator '===' must be spaced                                                 space-infix-ops
+  101:1    error  Expected indentation of 8 spaces but found 12                                 indent
+  101:13   error  Expected no linebreak before this statement                                   nonblock-statement-body-position
+  101:27   error  Operator '=' must be spaced                                                   space-infix-ops
+  102:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  102:13   error  Expected { after 'else'                                                       curly
+  103:1    error  Expected indentation of 8 spaces but found 12                                 indent
+  103:13   error  Expected no linebreak before this statement                                   nonblock-statement-body-position
+  103:27   error  Operator '=' must be spaced                                                   space-infix-ops
+  104:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  105:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  106:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  108:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  109:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  110:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  111:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  112:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  113:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  114:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  115:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  115:25   error  Block must not be padded by blank lines                                       padded-blocks
+  116:1    error  Trailing spaces not allowed                                                   no-trailing-spaces
+  117:1    error  More than 1 blank line not allowed                                            no-multiple-empty-lines
+  118:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  119:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  121:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  122:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  122:9    error  Unexpected var, use let or const instead                                      no-var
+  123:1    error  Expected indentation of 6 spaces but found 10                                 indent
+  123:11   error  Expected a line break after this opening brace                                object-curly-newline
+  124:1    error  Expected indentation of 8 spaces but found 12                                 indent
+  125:1    error  Expected indentation of 8 spaces but found 12                                 indent
+  126:1    error  Expected indentation of 8 spaces but found 12                                 indent
+  127:1    error  Expected indentation of 8 spaces but found 12                                 indent
+  127:34   error  Missing trailing comma                                                        comma-dangle
+  128:1    error  Expected indentation of 6 spaces but found 11                                 indent
+  128:13   error  Expected newline before ')'                                                   function-paren-newline
+  130:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  131:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  133:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  134:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  135:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  135:17   error  Expected method shorthand                                                     object-shorthand
+  135:34   error  Missing space before function parentheses                                     space-before-function-paren
+  136:1    error  Expected indentation of 10 spaces but found 20                                indent
+  137:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  138:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  138:17   error  Expected method shorthand                                                     object-shorthand
+  138:33   error  Missing space before function parentheses                                     space-before-function-paren
+  139:1    error  Expected indentation of 10 spaces but found 20                                indent
+  140:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  141:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  141:16   error  Unexpected function expression                                                prefer-arrow-callback
+  141:16   error  Expected to return a value at the end of function                             consistent-return
+  141:24   error  Missing space before function parentheses                                     space-before-function-paren
+  142:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  144:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  145:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  145:60   error  Unary operator '++' used                                                      no-plusplus
+  146:1    error  Expected indentation of 10 spaces but found 20                                indent
+  147:1    error  Expected indentation of 12 spaces but found 24                                indent
+  147:50   error  Operator '=' must be spaced                                                   space-infix-ops
+  148:1    error  Expected indentation of 10 spaces but found 20                                indent
+  149:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  150:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  150:41   error  Expected a line break after this opening brace                                object-curly-newline
+  150:63   error  A space is required after ','                                                 comma-spacing
+  150:72   error  Missing space before value for key 'authors'                                  key-spacing
+  150:96   error  Missing space before value for key 'genres'                                   key-spacing
+  150:112  error  Expected property shorthand                                                   object-shorthand
+  150:147  error  Expected a line break before this closing brace                               object-curly-newline
+  151:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  152:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  152:13   error  Unnecessary return statement                                                  no-useless-return
+  153:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  153:9    error  Closing curly brace does not appear on the same line as the subsequent block  brace-style
+  154:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  154:14   error  Unnecessary 'else' after 'return'                                             no-else-return
+  155:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  156:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  156:23   error  Unexpected function expression                                                prefer-arrow-callback
+  156:23   error  Expected to return a value at the end of function                             consistent-return
+  157:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  158:1    error  Expected indentation of 8 spaces but found 19                                 indent
+  159:1    error  Expected indentation of 8 spaces but found 19                                 indent
+  160:1    error  Expected indentation of 6 spaces but found 16                                 indent
+  161:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  162:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  162:6    error  Missing trailing comma                                                        comma-dangle
+  165:1    error  More than 1 blank line not allowed                                            no-multiple-empty-lines
+  168:35   error  Missing space before function parentheses                                     space-before-function-paren
+  168:52   error  Block must not be padded by blank lines                                       padded-blocks
+  170:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  171:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  171:9    error  Expected method shorthand                                                     object-shorthand
+  171:23   error  Missing space before function parentheses                                     space-before-function-paren
+  172:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  173:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  174:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  174:9    error  Expected method shorthand                                                     object-shorthand
+  174:37   error  Missing space before function parentheses                                     space-before-function-paren
+  175:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  175:33   error  Unnecessarily quoted property 'book' found                                    quote-props
+  176:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  177:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  177:8    error  Unexpected function expression                                                prefer-arrow-callback
+  177:8    error  Expected to return a value at the end of function                             consistent-return
+  177:16   error  Missing space before function parentheses                                     space-before-function-paren
+  178:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  179:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  179:25   error  Operator '==' must be spaced                                                  space-infix-ops
+  180:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  181:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  182:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  183:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  183:123  error  There should be no space before this paren                                    space-in-parens
+  184:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  184:8    error  Block must not be padded by blank lines                                       padded-blocks
+  189:36   error  Missing space before function parentheses                                     space-before-function-paren
+  189:53   error  Block must not be padded by blank lines                                       padded-blocks
+  191:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  193:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  194:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  194:9    error  Expected method shorthand                                                     object-shorthand
+  194:23   error  Missing space before function parentheses                                     space-before-function-paren
+  195:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  196:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  197:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  197:9    error  Expected method shorthand                                                     object-shorthand
+  197:37   error  Missing space before function parentheses                                     space-before-function-paren
+  198:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  198:33   error  Unnecessarily quoted property 'book' found                                    quote-props
+  199:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  200:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  200:8    error  Unexpected function expression                                                prefer-arrow-callback
+  200:8    error  Expected to return a value at the end of function                             consistent-return
+  200:16   error  Missing space before function parentheses                                     space-before-function-paren
+  201:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  202:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  203:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  204:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  205:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  205:127  error  There should be no space before this paren                                    space-in-parens
+  206:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  206:13   error  Function expected a return value                                              consistent-return
+  206:13   error  Unnecessary return statement                                                  no-useless-return
+  207:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  207:9    error  Closing curly brace does not appear on the same line as the subsequent block  brace-style
+  208:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  208:14   error  Unnecessary 'else' after 'return'                                             no-else-return
+  209:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  210:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  210:49   error  Unexpected function expression                                                prefer-arrow-callback
+  210:58   error  Expected to return a value at the end of function 'deleteBook'                consistent-return
+  210:69   error  'err' is already declared in the upper scope                                  no-shadow
+  211:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  212:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  213:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  214:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  214:16   error  Block must not be padded by blank lines                                       padded-blocks
+  216:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  217:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  217:8    error  Block must not be padded by blank lines                                       padded-blocks
+  222:35   error  Missing space before function parentheses                                     space-before-function-paren
+  222:52   error  Block must not be padded by blank lines                                       padded-blocks
+  224:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  225:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  226:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  226:9    error  Expected method shorthand                                                     object-shorthand
+  226:23   error  Missing space before function parentheses                                     space-before-function-paren
+  227:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  228:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  229:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  229:9    error  Expected method shorthand                                                     object-shorthand
+  229:26   error  Missing space before function parentheses                                     space-before-function-paren
+  230:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  231:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  232:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  232:9    error  Expected method shorthand                                                     object-shorthand
+  232:25   error  Missing space before function parentheses                                     space-before-function-paren
+  233:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  234:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  235:1    error  Expected indentation of 2 spaces but found 8                                  indent
+  235:12   error  Unexpected function expression                                                prefer-arrow-callback
+  235:12   error  Expected to return a value at the end of function                             consistent-return
+  235:20   error  Missing space before function parentheses                                     space-before-function-paren
+  236:1    error  Expected indentation of 4 spaces but found 12                                 indent
+  236:17   error  'err' used outside of binding context                                         block-scoped-var
+  236:36   error  'err' used outside of binding context                                         block-scoped-var
+  237:1    error  Expected indentation of 4 spaces but found 12                                 indent
+  237:29   error  Operator '==' must be spaced                                                  space-infix-ops
+  238:1    error  Expected indentation of 6 spaces but found 16                                 indent
+  238:17   error  All 'var' declarations must be at the top of the function scope               vars-on-top
+  238:17   error  Unexpected var, use let or const instead                                      no-var
+  238:21   error  'err' is already defined                                                      no-redeclare
+  239:1    error  Expected indentation of 6 spaces but found 16                                 indent
+  240:1    error  Expected indentation of 6 spaces but found 16                                 indent
+  241:1    error  Expected indentation of 4 spaces but found 12                                 indent
+  242:1    error  Expected indentation of 4 spaces but found 12                                 indent
+  243:1    error  Expected indentation of 4 spaces but found 12                                 indent
+  244:1    error  Expected indentation of 4 spaces but found 12                                 indent
+  244:18   error  All 'var' declarations must be at the top of the function scope               vars-on-top
+  244:18   error  Unexpected var, use let or const instead                                      no-var
+  244:22   error  Identifier 'all_g_iter' is not in camel case                                  camelcase
+  244:38   error  Identifier 'all_g_iter' is not in camel case                                  camelcase
+  244:74   error  Unary operator '++' used                                                      no-plusplus
+  244:74   error  Identifier 'all_g_iter' is not in camel case                                  camelcase
+  245:1    error  Expected indentation of 6 spaces but found 16                                 indent
+  245:22   error  All 'var' declarations must be at the top of the function scope               vars-on-top
+  245:22   error  Unexpected var, use let or const instead                                      no-var
+  245:26   error  Identifier 'book_g_iter' is not in camel case                                 camelcase
+  245:43   error  Identifier 'book_g_iter' is not in camel case                                 camelcase
+  245:84   error  Unary operator '++' used                                                      no-plusplus
+  245:84   error  Identifier 'book_g_iter' is not in camel case                                 camelcase
+  246:1    error  This line has a length of 117. Maximum allowed is 100                         max-len
+  246:1    error  Expected indentation of 8 spaces but found 20                                 indent
+  246:66   error  Operator '===' must be spaced                                                 space-infix-ops
+  247:1    error  Expected indentation of 10 spaces but found 24                                indent
+  247:59   error  Operator '=' must be spaced                                                   space-infix-ops
+  248:1    error  Expected indentation of 8 spaces but found 20                                 indent
+  249:1    error  Expected indentation of 6 spaces but found 16                                 indent
+  250:1    error  Expected indentation of 4 spaces but found 12                                 indent
+  251:1    error  Expected indentation of 4 spaces but found 12                                 indent
+  251:37   error  Expected a line break after this opening brace                                object-curly-newline
+  251:69   error  Missing space before value for key 'authors'                                  key-spacing
+  251:93   error  Missing space before value for key 'genres'                                   key-spacing
+  251:128  error  Expected a line break before this closing brace                               object-curly-newline
+  252:1    error  Expected indentation of 2 spaces but found 8                                  indent
+  252:12   error  Block must not be padded by blank lines                                       padded-blocks
+  256:1    error  More than 1 blank line not allowed                                            no-multiple-empty-lines
+  260:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  261:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  262:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  262:9    error  Expected space(s) after "if"                                                  keyword-spacing
+  262:47   error  Missing space before opening brace                                            space-before-blocks
+  263:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  263:13   error  Expected space(s) after "if"                                                  keyword-spacing
+  263:13   error  Expected { after 'if' condition                                               curly
+  263:37   error  Operator '===' must be spaced                                                 space-infix-ops
+  264:1    error  Expected indentation of 8 spaces but found 12                                 indent
+  264:13   error  Expected no linebreak before this statement                                   nonblock-statement-body-position
+  264:27   error  Operator '=' must be spaced                                                   space-infix-ops
+  265:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  265:13   error  Expected { after 'else'                                                       curly
+  266:1    error  Expected indentation of 8 spaces but found 12                                 indent
+  266:13   error  Expected no linebreak before this statement                                   nonblock-statement-body-position
+  266:27   error  Operator '=' must be spaced                                                   space-infix-ops
+  267:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  268:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  269:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  270:1    error  Trailing spaces not allowed                                                   no-trailing-spaces
+  271:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  272:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  273:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  274:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  275:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  276:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  278:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  279:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  279:25   error  Block must not be padded by blank lines                                       padded-blocks
+  281:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  282:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  284:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  285:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  285:9    error  Unexpected var, use let or const instead                                      no-var
+  286:1    error  Expected indentation of 6 spaces but found 10                                 indent
+  286:11   error  Expected a line break after this opening brace                                object-curly-newline
+  287:1    error  Expected indentation of 8 spaces but found 12                                 indent
+  288:1    error  Expected indentation of 8 spaces but found 12                                 indent
+  289:1    error  Expected indentation of 8 spaces but found 12                                 indent
+  290:1    error  Expected indentation of 8 spaces but found 12                                 indent
+  290:42   error  Operator '===' must be spaced                                                 space-infix-ops
+  291:1    error  Expected indentation of 8 spaces but found 12                                 indent
+  291:17   error  Missing space before value for key '_id'                                      key-spacing
+  291:30   error  Missing trailing comma                                                        comma-dangle
+  292:1    error  Expected indentation of 6 spaces but found 11                                 indent
+  292:13   error  Expected newline before ')'                                                   function-paren-newline
+  294:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  295:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  297:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  298:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  299:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  299:17   error  Expected method shorthand                                                     object-shorthand
+  299:34   error  Missing space before function parentheses                                     space-before-function-paren
+  300:1    error  Expected indentation of 10 spaces but found 20                                indent
+  301:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  302:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  302:17   error  Expected method shorthand                                                     object-shorthand
+  302:33   error  Missing space before function parentheses                                     space-before-function-paren
+  303:1    error  Expected indentation of 10 spaces but found 20                                indent
+  304:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  305:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  305:16   error  Unexpected function expression                                                prefer-arrow-callback
+  305:16   error  Expected to return a value at the end of function                             consistent-return
+  305:24   error  Missing space before function parentheses                                     space-before-function-paren
+  306:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  308:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  309:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  309:60   error  Unary operator '++' used                                                      no-plusplus
+  310:1    error  Expected indentation of 10 spaces but found 20                                indent
+  311:1    error  Expected indentation of 12 spaces but found 24                                indent
+  311:50   error  Operator '=' must be spaced                                                   space-infix-ops
+  312:1    error  Expected indentation of 10 spaces but found 20                                indent
+  313:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  314:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  314:41   error  Expected a line break after this opening brace                                object-curly-newline
+  314:63   error  A space is required after ','                                                 comma-spacing
+  314:72   error  Missing space before value for key 'authors'                                  key-spacing
+  314:96   error  Missing space before value for key 'genres'                                   key-spacing
+  314:112  error  Expected property shorthand                                                   object-shorthand
+  314:147  error  Expected a line break before this closing brace                               object-curly-newline
+  315:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  316:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  316:13   error  Unnecessary return statement                                                  no-useless-return
+  317:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  317:9    error  Closing curly brace does not appear on the same line as the subsequent block  brace-style
+  318:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  318:14   error  Unnecessary 'else' after 'return'                                             no-else-return
+  319:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  320:1    error  Expected indentation of 6 spaces but found 12                                 indent
+  320:61   error  Unexpected function expression                                                prefer-arrow-callback
+  320:61   error  Expected to return a value at the end of function                             consistent-return
+  320:74   error  A space is required after ','                                                 comma-spacing
+  321:1    error  Expected indentation of 8 spaces but found 16                                 indent
+  322:1    error  Expected indentation of 8 spaces but found 19                                 indent
+  323:1    error  Expected indentation of 8 spaces but found 19                                 indent
+  324:1    error  Expected indentation of 6 spaces but found 16                                 indent
+  325:1    error  Expected indentation of 4 spaces but found 8                                  indent
+  326:1    error  Expected indentation of 2 spaces but found 4                                  indent
+  326:6    error  Missing trailing comma                                                        comma-dangle
+  328:1    error  Too many blank lines at the end of file. Max of 0 allowed                     no-multiple-empty-lines
+
+✖ 474 problems (474 errors, 0 warnings)
+  437 errors and 0 warnings potentially fixable with the `--fix` option.
+

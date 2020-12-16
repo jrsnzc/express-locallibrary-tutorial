@@ -1,0 +1,252 @@
+
+/home/damon/UNSA/SoftwareII/express-locallibrary-tutorial/controllers/authorController.js
+    1:1   error  Unexpected var, use let or const instead                                      no-var
+    1:41  error  Missing semicolon                                                             semi
+    2:1   error  Unexpected var, use let or const instead                                      no-var
+    2:13  error  `async` import should occur before import of `../models/author`               import/order
+    2:29  error  Missing semicolon                                                             semi
+    3:1   error  Unexpected var, use let or const instead                                      no-var
+    3:37  error  Missing semicolon                                                             semi
+    5:13  error  A space is required after ','                                                 comma-spacing
+    5:35  error  `express-validator` import should occur before import of `../models/author`   import/order
+    5:43  error  Strings must use singlequote                                                  quotes
+    8:49  error  Block must not be padded by blank lines                                       padded-blocks
+   10:1   error  Expected indentation of 2 spaces but found 4                                  indent
+   11:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   12:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   12:15  error  Unexpected function expression                                                prefer-arrow-callback
+   12:15  error  Expected to return a value at the end of function                             consistent-return
+   12:30  error  Identifier 'list_authors' is not in camel case                                camelcase
+   13:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   14:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   15:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   16:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   16:11  error  Block must not be padded by blank lines                                       padded-blocks
+   16:11  error  Missing semicolon                                                             semi
+   21:51  error  Block must not be padded by blank lines                                       padded-blocks
+   23:1   error  Expected indentation of 2 spaces but found 4                                  indent
+   24:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   24:9   error  Expected method shorthand                                                     object-shorthand
+   25:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   26:1   error  Expected indentation of 8 spaces but found 16                                 indent
+   26:32  error  Missing semicolon                                                             semi
+   27:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   28:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   28:9   error  Expected method shorthand                                                     object-shorthand
+   29:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   29:25  error  Unnecessarily quoted property 'author' found                                  quote-props
+   30:1   error  Expected indentation of 8 spaces but found 16                                 indent
+   30:32  error  Missing semicolon                                                             semi
+   31:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   32:1   error  Expected indentation of 2 spaces but found 4                                  indent
+   32:8   error  Unexpected function expression                                                prefer-arrow-callback
+   32:8   error  Expected to return a value at the end of function                             consistent-return
+   33:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   33:13  error  'err' used outside of binding context                                         block-scoped-var
+   33:32  error  'err' used outside of binding context                                         block-scoped-var
+   34:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   35:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   35:13  error  All 'var' declarations must be at the top of the function scope               vars-on-top
+   35:13  error  Unexpected var, use let or const instead                                      no-var
+   35:17  error  'err' is already defined                                                      no-redeclare
+   36:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   37:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   38:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   39:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   40:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   41:1   error  Expected indentation of 2 spaces but found 4                                  indent
+   41:8   error  Block must not be padded by blank lines                                       padded-blocks
+   47:1   error  Expected indentation of 2 spaces but found 4                                  indent
+   53:1   error  Expected indentation of 2 spaces but found 4                                  indent
+   54:1   error  Expected indentation of 2 spaces but found 4                                  indent
+   54:60  error  Expected line break before `.withMessage`                                     newline-per-chained-call
+   55:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   55:26  error  Expected line break before `.withMessage`                                     newline-per-chained-call
+   56:1   error  Expected indentation of 2 spaces but found 4                                  indent
+   56:61  error  Expected line break before `.withMessage`                                     newline-per-chained-call
+   57:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   57:26  error  Expected line break before `.withMessage`                                     newline-per-chained-call
+   58:1   error  Expected indentation of 2 spaces but found 4                                  indent
+   59:1   error  Expected indentation of 2 spaces but found 4                                  indent
+   61:1   error  Expected indentation of 2 spaces but found 4                                  indent
+   62:1   error  Expected indentation of 2 spaces but found 4                                  indent
+   62:25  error  Block must not be padded by blank lines                                       padded-blocks
+   64:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   65:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   66:1   error  Trailing spaces not allowed                                                   no-trailing-spaces
+   67:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   68:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   68:9   error  Unexpected var, use let or const instead                                      no-var
+   69:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   70:1   error  Expected indentation of 8 spaces but found 16                                 indent
+   71:1   error  Expected indentation of 8 spaces but found 16                                 indent
+   72:1   error  Expected indentation of 8 spaces but found 16                                 indent
+   73:1   error  Expected indentation of 8 spaces but found 16                                 indent
+   74:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   74:14  error  Missing trailing comma                                                        comma-dangle
+   75:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   77:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   78:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   79:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   79:65  error  Expected property shorthand                                                   object-shorthand
+   80:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   80:13  error  Unnecessary return statement                                                  no-useless-return
+   81:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   81:9   error  Closing curly brace does not appear on the same line as the subsequent block  brace-style
+   82:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   82:14  error  Unnecessary 'else' after 'return'                                             no-else-return
+   83:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   85:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   86:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   86:25  error  Unexpected function expression                                                prefer-arrow-callback
+   86:25  error  Expected to return a value at the end of function                             consistent-return
+   87:1   error  Expected indentation of 8 spaces but found 16                                 indent
+   88:1   error  Expected indentation of 8 spaces but found 16                                 indent
+   89:1   error  Expected indentation of 8 spaces but found 16                                 indent
+   90:1   error  Expected indentation of 6 spaces but found 12                                 indent
+   91:1   error  Expected indentation of 4 spaces but found 8                                  indent
+   92:1   error  Expected indentation of 2 spaces but found 4                                  indent
+   92:6   error  Missing trailing comma                                                        comma-dangle
+   95:1   error  More than 1 blank line not allowed                                            no-multiple-empty-lines
+   98:55  error  Block must not be padded by blank lines                                       padded-blocks
+  100:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  101:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  101:9   error  Expected method shorthand                                                     object-shorthand
+  102:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  102:58  error  Missing semicolon                                                             semi
+  103:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  104:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  104:9   error  Expected method shorthand                                                     object-shorthand
+  105:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  105:25  error  Unnecessarily quoted property 'author' found                                  quote-props
+  105:66  error  Missing semicolon                                                             semi
+  106:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  107:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  107:8   error  Unexpected function expression                                                prefer-arrow-callback
+  107:8   error  Expected to return a value at the end of function                             consistent-return
+  108:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  109:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  110:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  111:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  112:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  113:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  114:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  114:8   error  Block must not be padded by blank lines                                       padded-blocks
+  119:56  error  Block must not be padded by blank lines                                       padded-blocks
+  121:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  122:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  122:9   error  Expected method shorthand                                                     object-shorthand
+  123:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  123:62  error  Missing semicolon                                                             semi
+  124:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  125:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  125:9   error  Expected method shorthand                                                     object-shorthand
+  126:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  126:25  error  Unnecessarily quoted property 'author' found                                  quote-props
+  126:70  error  Missing semicolon                                                             semi
+  127:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  128:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  128:8   error  Unexpected function expression                                                prefer-arrow-callback
+  128:8   error  Expected to return a value at the end of function                             consistent-return
+  129:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  130:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  131:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  132:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  133:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  134:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  134:13  error  Function expected a return value                                              consistent-return
+  134:13  error  Unnecessary return statement                                                  no-useless-return
+  135:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  135:9   error  Closing curly brace does not appear on the same line as the subsequent block  brace-style
+  136:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  136:14  error  Unnecessary 'else' after 'return'                                             no-else-return
+  137:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  138:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  138:57  error  Unexpected function expression                                                prefer-arrow-callback
+  138:66  error  Expected to return a value at the end of function 'deleteAuthor'              consistent-return
+  138:79  error  'err' is already declared in the upper scope                                  no-shadow
+  139:1   error  Expected indentation of 8 spaces but found 16                                 indent
+  140:1   error  Expected indentation of 8 spaces but found 16                                 indent
+  141:1   error  Expected indentation of 8 spaces but found 16                                 indent
+  141:49  error  Missing semicolon                                                             semi
+  142:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  142:15  error  Block must not be padded by blank lines                                       padded-blocks
+  142:15  error  Missing semicolon                                                             semi
+  144:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  145:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  145:8   error  Block must not be padded by blank lines                                       padded-blocks
+  150:55  error  Block must not be padded by blank lines                                       padded-blocks
+  152:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  152:36  error  Unexpected function expression                                                prefer-arrow-callback
+  152:36  error  Expected to return a value at the end of function                             consistent-return
+  153:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  153:13  error  'err' used outside of binding context                                         block-scoped-var
+  153:32  error  'err' used outside of binding context                                         block-scoped-var
+  154:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  155:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  155:13  error  All 'var' declarations must be at the top of the function scope               vars-on-top
+  155:13  error  Unexpected var, use let or const instead                                      no-var
+  155:17  error  'err' is already defined                                                      no-redeclare
+  156:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  157:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  158:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  159:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  160:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  160:61  error  Expected property shorthand                                                   object-shorthand
+  160:79  error  Block must not be padded by blank lines                                       padded-blocks
+  162:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  168:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  169:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  169:60  error  Expected line break before `.withMessage`                                     newline-per-chained-call
+  170:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  170:26  error  Expected line break before `.withMessage`                                     newline-per-chained-call
+  171:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  171:61  error  Expected line break before `.withMessage`                                     newline-per-chained-call
+  172:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  172:26  error  Expected line break before `.withMessage`                                     newline-per-chained-call
+  173:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  174:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  176:1   error  More than 1 blank line not allowed                                            no-multiple-empty-lines
+  177:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  178:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  178:25  error  Block must not be padded by blank lines                                       padded-blocks
+  180:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  181:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  183:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  184:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  184:9   error  Unexpected var, use let or const instead                                      no-var
+  185:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  186:1   error  Expected indentation of 8 spaces but found 16                                 indent
+  187:1   error  Expected indentation of 8 spaces but found 16                                 indent
+  188:1   error  Expected indentation of 8 spaces but found 16                                 indent
+  189:1   error  Expected indentation of 8 spaces but found 16                                 indent
+  190:1   error  Expected indentation of 8 spaces but found 16                                 indent
+  190:35  error  Missing trailing comma                                                        comma-dangle
+  191:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  191:14  error  Missing trailing comma                                                        comma-dangle
+  192:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  194:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  195:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  196:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  196:65  error  Expected property shorthand                                                   object-shorthand
+  197:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  197:13  error  Unnecessary return statement                                                  no-useless-return
+  198:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  198:9   error  Closing curly brace does not appear on the same line as the subsequent block  brace-style
+  199:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  199:14  error  Unnecessary 'else' after 'return'                                             no-else-return
+  200:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  201:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  201:65  error  Unexpected function expression                                                prefer-arrow-callback
+  201:65  error  Expected to return a value at the end of function                             consistent-return
+  202:1   error  Expected indentation of 8 spaces but found 16                                 indent
+  203:1   error  Expected indentation of 8 spaces but found 16                                 indent
+  204:1   error  Expected indentation of 8 spaces but found 16                                 indent
+  205:1   error  Expected indentation of 6 spaces but found 12                                 indent
+  206:1   error  Expected indentation of 4 spaces but found 8                                  indent
+  207:1   error  Expected indentation of 2 spaces but found 4                                  indent
+  207:6   error  Missing trailing comma                                                        comma-dangle
+
+✖ 246 problems (246 errors, 0 warnings)
+  225 errors and 0 warnings potentially fixable with the `--fix` option.
+
