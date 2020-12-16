@@ -1,16 +1,18 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-var Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-var GenreSchema = new Schema({
-    name: {type: String, required: true, minlength: 3, maxlength: 100}
+const GenreSchema = new Schema({
+    name: {
+        type: String, required: true, minlength: 3, maxlength: 100,
+    },
 });
 
 // Virtual for this genre instance URL.
 GenreSchema
 .virtual('url')
 .get(function () {
-  return '/catalog/genre/'+this._id;
+  return `/catalog/genre/${this.id}`;
 });
 
 // Export model.
