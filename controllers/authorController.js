@@ -31,7 +31,7 @@ exports.author_detail = (req, res, next) => {
     if (results.author == null) { // No results.
       const myErr = new Error('Author not found');
       myErr.status = 404;
-      return next(err);
+      return next(myErr);
     }
     // Successful, so render.
     res.render('author_detail', { title: 'Author Detail', author: results.author, author_books: results.authors_books });
