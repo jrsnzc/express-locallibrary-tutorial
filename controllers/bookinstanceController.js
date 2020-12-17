@@ -138,7 +138,7 @@ exports.bookinstance_update_get = (req, res, next) => {
     }
     // Success.
     res.render('bookinstance_form', {
-      title: 'Update  BookInstance',
+      title: 'Update BookInstance',
       book_list: results.books,
       selected_book: results.bookinstance.book._id,
       bookinstance: results.bookinstance,
@@ -159,7 +159,6 @@ exports.bookinstance_update_post = [
   (req, res, next) => {
     // Extract the validation errors from a request.
     const errors = validationResult(req);
-
     // Create a BookInstance object with escaped/trimmed data and current id.
     const bookinstance = new BookInstance({
       book: req.body.book,
