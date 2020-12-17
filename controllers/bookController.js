@@ -101,6 +101,7 @@ exports.book_create_post = [
   body('summary', 'Summary must not be empty.').trim().isLength({ min: 1 }).escape(),
   body('isbn', 'ISBN must not be empty').trim().isLength({ min: 1 }).escape(),
   body('genre.*').escape(),
+
   // Process request after validation and sanitization.
   (req, res, next) => {
     // Extract the validation errors from a request.
@@ -127,7 +128,6 @@ exports.book_create_post = [
         },
       }, (err, results) => {
         if (err) { return next(err); }
-
         // Mark our selected genres as checked.
         for (let i = 0; i < results.genres.length; i += 1) {
           if (book.genre.indexOf(results.genres[i]._id) > -1) {
@@ -295,7 +295,6 @@ exports.book_update_post = [
         },
       }, (err, results) => {
         if (err) { return next(err); }
-
         // Mark our selected genres as checked.
         for (let i = 0; i < results.genres.length; i += 1) {
           if (book.genre.indexOf(results.genres[i]._id) > -1) {
