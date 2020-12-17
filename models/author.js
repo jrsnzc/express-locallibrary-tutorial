@@ -9,16 +9,16 @@ const AuthorSchema = new mongoose.Schema({
 });
 
 // Virtual for author "full" name.
-AuthorSchema.virtual('name').get(function () {
+AuthorSchema.virtual('name').get(function toString() {
   return `${this.family_name}, ${this.first_name}`;
 });
 
 // Virtual for this author instance URL.
-AuthorSchema.virtual('url').get(function () {
+AuthorSchema.virtual('url').get(function toString() {
   return `/catalog/author/${this._id}`;
 });
 
-AuthorSchema.virtual('lifespan').get(function () {
+AuthorSchema.virtual('lifespan').get(function toString() {
   let lifetimeString = '';
   if (this.date_of_birth) {
     lifetimeString = DateTime.fromJSDate(this.date_of_birth).toLocaleString(DateTime.DATE_MED);
@@ -30,11 +30,11 @@ AuthorSchema.virtual('lifespan').get(function () {
   return lifetimeString;
 });
 
-AuthorSchema.virtual('date_of_birth_yyyy_mm_dd').get(function () {
+AuthorSchema.virtual('date_of_birth_yyyy_mm_dd').get(function toString() {
   return DateTime.fromJSDate(this.date_of_birth).toISODate(); // format 'YYYY-MM-DD'
 });
 
-AuthorSchema.virtual('date_of_death_yyyy_mm_dd').get(function () {
+AuthorSchema.virtual('date_of_death_yyyy_mm_dd').get(function toString() {
   return DateTime.fromJSDate(this.date_of_death).toISODate(); // format 'YYYY-MM-DD'
 });
 
