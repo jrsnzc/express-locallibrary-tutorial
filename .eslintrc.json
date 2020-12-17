@@ -12,7 +12,9 @@
         "ecmaVersion": 12
     },
     "rules": {
+        "no-param-reassign": "off",
         "no-underscore-dangle": "off",
-        "no-unused-vars": "off"
+        "no-unused-vars": "off",
+        "no-use-before-define": ["error", { "functions": false }]
     }
 }
