@@ -188,10 +188,10 @@ exports.author_update_post = [
       return;
     }
     // Data from form is valid. Update the record.
-    Author.findByIdAndUpdate(req.params.id, author, {}, (err, theauthor) => {
+    Author.findByIdAndUpdate(req.params.id, author, {}, (err, theAuthor) => {
       if (err) { return next(err); }
       // Successful - redirect to genre detail page.
-      res.redirect(theauthor.url);
+      res.redirect(theAuthor.url);
       return null;
     });
   },
