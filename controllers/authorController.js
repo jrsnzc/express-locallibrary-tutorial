@@ -9,14 +9,14 @@ exports.author_list = (req, res, next) => {
     .sort([['family_name', 'ascending']])
     .exec((err, listAuthors) => {
       if (err) { return next(err); }
-      // Successful, so render
+      // Successful, so render.
       res.render('author_list', { title: 'Author List', author_list: listAuthors });
       return null;
     });
 };
 
 // Display detail page for a specific Author.
-exports.author_detail = function (req, res, next) {
+exports.author_detail = (req, res, next) => {
   async.parallel({
     author: (callback) => {
       Author.findById(req.params.id)
@@ -46,7 +46,8 @@ exports.author_create_get = (req, res, next) => {
 
 // Handle Author create on POST.
 exports.author_create_post = [
-  // Validate and sanitise fields.
+
+  // Validate and sanitize fields.
   body('first_name')
     .trim().isLength({ min: 1 }).escape()
     .withMessage('First name must be specified.')
@@ -64,25 +65,28 @@ exports.author_create_post = [
   (req, res, next) => {
     // Extract the validation errors from a request.
     const errors = validationResult(req);
+
+    // Create Author object with escaped and trimmed data
+    const author = new Author({
+      first_name: req.body.first_name,
+      family_name: req.body.family_name,
+      date_of_birth: req.body.date_of_birth,
+      date_of_death: req.body.date_of_death,
+    });
+
     if (!errors.isEmpty()) {
       // There are errors. Render form again with sanitized values/errors messages.
-      res.render('author_form', { title: 'Create Author', author: req.body, errors: errors.array() });
-    } else {
-      // Data from form is valid.
-      // Create an Author object with escaped and trimmed data.
-      const author = new Author({
-        first_name: req.body.first_name,
-        family_name: req.body.family_name,
-        date_of_birth: req.body.date_of_birth,
-        date_of_death: req.body.date_of_death,
-      });
-      author.save((myErr) => {
-        if (myErr) { return next(myErr); }
-        // Successful - redirect to new author record.
-        res.redirect(author.url);
-        return null;
-      });
+      res.render('author_form', { title: 'Create Author', author, errors: errors.array() });
+      return;
     }
+    // Data from form is valid.
+    // Save author.
+    author.save((err) => {
+      if (err) { return next(err); }
+      // Successful - redirect to new author record.
+      res.redirect(author.url);
+      return null;
+    });
   },
 ];
 
@@ -117,22 +121,19 @@ exports.author_delete_post = (req, res, next) => {
     },
   }, (err, results) => {
     if (err) { return next(err); }
-    // Success
+    // Success.
     if (results.authors_books.length > 0) {
       // Author has books. Render in same way as for GET route.
       res.render('author_delete', { title: 'Delete Author', author: results.author, author_books: results.authors_books });
-    } else {
-      // Author has no books. Delete object and redirect to the list of authors.
-      Author.findByIdAndRemove(
-        req.body.authorid,
-        (myErr) => {
-          if (myErr) { return next(myErr); }
-          // Success - go to author list
-          res.redirect('/catalog/authors');
-          return null;
-        },
-      );
+      return null;
     }
+    // Author has no books. Delete object and redirect to the list of authors.
+    Author.findByIdAndRemove(req.body.authorid, (myErr) => {
+      if (myErr) { return next(myErr); }
+      // Success - go to author list.
+      res.redirect('/catalog/authors');
+      return null;
+    });
     return null;
   });
 };
@@ -155,11 +156,13 @@ exports.author_update_get = (req, res, next) => {
 // Handle Author update on POST.
 exports.author_update_post = [
   // Validate and santize fields.
-  body('first_name').trim().isLength({ min: 1 }).escape()
+  body('first_name')
+    .trim().isLength({ min: 1 }).escape()
     .withMessage('First name must be specified.')
     .isAlphanumeric()
     .withMessage('First name has non-alphanumeric characters.'),
-  body('family_name').trim().isLength({ min: 1 }).escape()
+  body('family_name')
+    .trim().isLength({ min: 1 }).escape()
     .withMessage('Family name must be specified.')
     .isAlphanumeric()
     .withMessage('Family name has non-alphanumeric characters.'),
@@ -182,14 +185,14 @@ exports.author_update_post = [
     if (!errors.isEmpty()) {
       // There are errors. Render the form again with sanitized values and error messages.
       res.render('author_form', { title: 'Update Author', author, errors: errors.array() });
-    } else {
-      // Data from form is valid. Update the record.
-      Author.findByIdAndUpdate(req.params.id, author, {}, (err, theauthor) => {
-        if (err) { return next(err); }
-        // Successful - redirect to genre detail page.
-        res.redirect(theauthor.url);
-        return null;
-      });
+      return;
     }
+    // Data from form is valid. Update the record.
+    Author.findByIdAndUpdate(req.params.id, author, {}, (err, theauthor) => {
+      if (err) { return next(err); }
+      // Successful - redirect to genre detail page.
+      res.redirect(theauthor.url);
+      return null;
+    });
   },
 ];
