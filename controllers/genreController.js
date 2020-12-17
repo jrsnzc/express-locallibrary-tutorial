@@ -46,7 +46,6 @@ exports.genre_create_get = (req, res, next) => {
 
 // Handle Genre create on POST.
 exports.genre_create_post = [
-
   // Validate and santise the name field.
   body('name', 'Genre name must contain at least 3 characters').trim().isLength({ min: 3 }).escape(),
 
@@ -70,7 +69,6 @@ exports.genre_create_post = [
     Genre.findOne({ name: req.body.name })
       .exec((err, foundGenre) => {
         if (err) { return next(err); }
-
         if (foundGenre) {
           // Genre exists, redirect to its detail page.
           res.redirect(foundGenre.url);
@@ -161,12 +159,10 @@ exports.genre_update_post = [
     const errors = validationResult(req);
 
     // Create a genre object with escaped and trimmed data (and the old id!)
-    const genre = new Genre(
-      {
-        name: req.body.name,
-        _id: req.params.id,
-      },
-    );
+    const genre = new Genre({
+      name: req.body.name,
+      _id: req.params.id,
+    });
 
     if (!errors.isEmpty()) {
       // There are errors. Render the form again with sanitized values and error messages.
