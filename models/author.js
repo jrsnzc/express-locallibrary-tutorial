@@ -1,9 +1,7 @@
 const mongoose = require('mongoose');
 const { DateTime } = require('luxon'); // for date handling
 
-const Schema = mongoose.Schema;
-
-const AuthorSchema = new Schema({
+const AuthorSchema = new mongoose.Schema({
   first_name: { type: String, required: true, maxlength: 100 },
   family_name: { type: String, required: true, maxlength: 100 },
   date_of_birth: { type: Date },
@@ -17,7 +15,7 @@ AuthorSchema.virtual('name').get(function () {
 
 // Virtual for this author instance URL.
 AuthorSchema.virtual('url').get(function () {
-  return `/catalog/author/${this.id}`;
+  return `/catalog/author/${this._id}`;
 });
 
 AuthorSchema.virtual('lifespan').get(function () {
