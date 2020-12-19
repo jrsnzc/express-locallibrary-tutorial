@@ -1,9 +1,6 @@
 pipeline {
-    agent {
-        docker {
-            image 'selenium/node-firefox'
-            args '-p 3000:3000'
-        }
+    agent { 
+        dockerfile true
     }
     environment {
         CI = 'true'
@@ -11,7 +8,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'sudo apt install node npm -y'
                 sh 'npm install'
             }
         }
