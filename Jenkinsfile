@@ -1,7 +1,8 @@
 pipeline {
     agent { 
-        dockerfile true
-        args '-p 4444:4444 -v /dev/shm:/dev/shm'
+        dockerfile {
+            args '-p 4444:4444 -v /dev/shm:/dev/shm'
+        }
     }
     environment {
         CI = 'true'
