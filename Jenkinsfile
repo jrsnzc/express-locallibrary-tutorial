@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node:15-alpine'
+            image 'selenium/node-firefox'
             args '-p 3000:3000'
         }
     }
@@ -12,6 +12,11 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'npm run testbdd'
             }
         }
         stage('Deliver') {
