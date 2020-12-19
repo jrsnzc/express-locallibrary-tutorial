@@ -1,4 +1,5 @@
-const { Builder } = require('selenium-webdriver')
+const webDriver = require('selenium-webdriver')
+seleniumServer = require("selenium-webdriver/remote").SeleniumServer;
 const { getElementById, getElementByXPath } = require('./utils')
 require('selenium-webdriver/chrome')
 require('selenium-webdriver/firefox')
@@ -10,7 +11,9 @@ jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000 * 60 * 5
 let driver
 
 beforeAll(async () => {
-  driver = await new Builder().forBrowser('firefox').build()
+  driver = new webDriver.Builder()
+  .usingServer('http://localhost:4444/wd/hub')
+  .build(); 
 })
 
 afterAll(async () => driver.quit())
