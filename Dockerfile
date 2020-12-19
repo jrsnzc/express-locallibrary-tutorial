@@ -1,3 +1,7 @@
 FROM selenium/node-firefox
 USER root
-RUN apt-get update && apt-get install -y nodejs npm 
+RUN apt-get update && apt-get install -y apt-transport-https \
+       ca-certificates curl gnupg2 \
+       software-properties-common
+RUN curl -sL https://deb.nodesource.com/setup_15.x | bash -
+RUN apt-get install -y nodejs
