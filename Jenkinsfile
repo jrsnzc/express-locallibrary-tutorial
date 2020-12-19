@@ -1,7 +1,8 @@
 pipeline {
-    agent { 
-        dockerfile {
-            args '-p 4444:4444 -v /dev/shm:/dev/shm'
+    agent {
+        docker {
+            image 'node:15-alpine'
+            args '-p 3000:3000'
         }
     }
     environment {
@@ -11,11 +12,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install'
-            }
-        }
-        stage('Test') {
-            steps {
-                sh 'npm run testbdd'
             }
         }
         stage('Deliver') {
