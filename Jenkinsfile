@@ -14,6 +14,12 @@ pipeline {
                 sh 'npm install'
             }
         }
+        stage('Test') {
+            steps {
+                sh 'npm run lint'
+                sh 'npm run coverage'
+            }
+        }
         stage('Deliver') {
             steps {
                 sh './jenkins/scripts/deliver.sh'
