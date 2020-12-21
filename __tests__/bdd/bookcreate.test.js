@@ -17,7 +17,7 @@ afterAll(async () => driver.quit())
 
 const rootURL = 'http://localhost:3000/catalog/book/create'
 
-describe('Libro nuevo ingresado no debería tener copias', () => {
+describe('Agregando un nuevo libro', () => {
   test('Página principal: Create Book', async () => {
     await driver.get(rootURL)
   });
@@ -27,8 +27,8 @@ describe('Libro nuevo ingresado no debería tener copias', () => {
     const title = await getElementById('title', driver);
     await title.sendKeys("Mi libro favorito");
 
-    const author = await getElementByXPath('/html/body/div/div/div[2]/form/div[2]/select/option[6]', driver)
-    await author.click()
+    const author = await getElementById('author', driver);
+    await author.sendKeys("Bova, Ben");
 
     const summary = await getElementById('summary', driver);
     await summary.sendKeys("Érase una vez un lobo perverso que rondaba por el bosque. Observó a su alrededor con ojos voraces en un bosque muy frondoso, una casita blanca donde vivía una niña muy guapa a quien todos llamaban Caperucita Roja.");
