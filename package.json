@@ -9,7 +9,7 @@
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
     "serverstart": "DEBUG=express-locallibrary-tutorial:* npm run devstart",
-    "test": "mocha --timeout 10000 --exit __tests__",
+    "test": "mocha --timeout 10000 --exit --ignore __tests__/bdd __tests__",
     "coverage": "nyc npm run test",
     "testbdd": "jest --config jest.config.js",
     "lint": "eslint --max-warnings 3 ."
