@@ -1,33 +1,33 @@
-const { Builder } = require('selenium-webdriver')
-const { getElementById, getElementByXPath } = require('./utils')
-require('selenium-webdriver/chrome')
-require('selenium-webdriver/firefox')
-require('chromedriver')
-require('geckodriver')
+const { Builder } = require('selenium-webdriver');
+const { getElementById, getElementByXPath } = require('./utils');
+require('selenium-webdriver/chrome');
+require('selenium-webdriver/firefox');
+require('chromedriver');
+require('geckodriver');
 
-jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000 * 60 * 5
+jest.DEFAULT_TIMEOUT_INTERVAL = 1000 * 60 * 5;
 
-let driver
+let driver;
 
 beforeAll(async () => {
-  driver = await new Builder().forBrowser('firefox').build()
-})
+  driver = await new Builder().forBrowser('firefox').build();
+});
 
-afterAll(async () => driver.quit())
+afterAll(async () => driver.quit());
 
-const rootURL = 'http://localhost:3000/catalog/bookinstances'
+const rootURL = 'http://localhost:3000/catalog/bookinstances';
 
 describe('Cambiando el status de un libro', () => {
   test('Página principal: Book Instance List', async () => {
-    await driver.get(rootURL)
+    await driver.get(rootURL);
   });
 
-  //Verificando la actualizacion de status de un libro
+  // Verificando la actualizacion de status de un libro
   test('Seleccionando un libro para ver sus características', async () => {
     const bookInstance = await getElementByXPath('/html/body/div/div/div[2]/li[5]/a', driver);
     await bookInstance.click();
 
-    const response = await getElementByXPath('/html/body/div/div/div[2]/h1', driver)
+    const response = await getElementByXPath('/html/body/div/div/div[2]/h1', driver);
     const actual = await response.getText();
     const expected = 'ID: 5f67ed4e95600d1abe808a33';
     expect(actual).toMatch(expected);
@@ -37,10 +37,10 @@ describe('Cambiando el status de un libro', () => {
     const UpdatebookInstance = await getElementByXPath('/html/body/div/div/div[2]/p[6]/a', driver);
     await UpdatebookInstance.click();
 
-    const response_2 = await getElementByXPath('/html/body/div/div/div[2]/h1', driver)
-    const actual_2 = await response_2.getText();
-    const expected_2 = 'Update BookInstance';
-    expect(actual_2).toMatch(expected_2);
+    const response2 = await getElementByXPath('/html/body/div/div/div[2]/h1', driver);
+    const actual2 = await response2.getText();
+    const expected2 = 'Update BookInstance';
+    expect(actual2).toMatch(expected2);
   });
 
   test('Cambiando el estado del libro de estado Maintenance a estado Available', async () => {
@@ -50,9 +50,9 @@ describe('Cambiando el status de un libro', () => {
     const submit = await getElementByXPath('/html/body/div/div/div[2]/form/button', driver);
     await submit.click();
 
-    const response_3 = await getElementByXPath('/html/body/div/div/div[2]/p[3]/span', driver)
-    const actual_3 = await response_3.getText();
-    const expected_3 = 'Available';
-    expect(actual_3).toMatch(expected_3);
+    const response3 = await getElementByXPath('/html/body/div/div/div[2]/p[3]/span', driver);
+    const actual3 = await response3.getText();
+    const expected3 = 'Available';
+    expect(actual3).toMatch(expected3);
   });
 });
