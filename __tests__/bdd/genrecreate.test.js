@@ -24,7 +24,7 @@ describe('Agregando un nuevo género', () => {
   });
 
   test('Creando un nuevo género', async () => {
-    
+
     const generoNuevo = await getElementById('name', driver);
     await generoNuevo.sendKeys("Horror");
 

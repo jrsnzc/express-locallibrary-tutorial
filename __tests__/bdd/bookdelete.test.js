@@ -10,7 +10,7 @@ jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000 * 60 * 5
 let driver
 
 beforeAll(async () => {
-  driver = await new Builder().forBrowser('firefox').build()
+    driver = await new Builder().forBrowser('firefox').build()
 })
 
 afterAll(async () => driver.quit())
