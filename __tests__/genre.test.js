@@ -26,10 +26,10 @@ describe('Genres', () => {
   describe('Update a genre', () => {
     it('It should update a genre given the id', (done) => {
       const genre = Genre({
-        name: 'Adventure',
+        name: 'Romance',
       });
       chai.request(server)
-        .post('/catalog/genre/5fdfbaed5413ed1b3247bb0d')
+        .post('/catalog/genre/5fdffcd42b50e20e63f8cf2e/update')
         .send(genre)
         .end((err, res) => {
           res.should.have.status(200);
@@ -41,10 +41,10 @@ describe('Genres', () => {
   describe('Delete a genre', () => {
     it('It should remove a genre given the id', (done) => {
       const genre = {
-        id: '5fdfddbbfe6b671b04831097',
+        id: '5fdffcd42b50e20e63f8cf2e',
       };
       chai.request(server)
-        .post('/catalog/genre/5fdfddbbfe6b671b04831097/delete')
+        .post('/catalog/genre/5fdffcd42b50e20e63f8cf2e/delete')
         .send(genre)
         .end((err, res) => {
           res.should.have.status(200);

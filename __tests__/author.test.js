@@ -33,7 +33,7 @@ describe('Authors', () => {
         family_name: 'Aquino',
       });
       chai.request(server)
-        .post('/catalog/author/5f67ed4695600d1abe808a1e/update')
+        .post('/catalog/author/5fdffaac46f0480d435e4676/update')
         .send(author)
         .end((err, res) => {
           res.should.have.status(200);
@@ -45,10 +45,10 @@ describe('Authors', () => {
   describe('Delete an author', () => {
     it('It should remove an author given the id', (done) => {
       const author = {
-        authorid: '5fdfcf2fb0e6a60f75bf81f7',
+        authorid: '5fdffaac46f0480d435e4676',
       };
       chai.request(server)
-        .post('/catalog/author/5fdfcf2fb0e6a60f75bf81f7/delete')
+        .post('/catalog/author/5fdffaac46f0480d435e4676/delete')
         .send(author)
         .end((err, res) => {
           res.should.have.status(200);

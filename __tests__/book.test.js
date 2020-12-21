@@ -50,7 +50,7 @@ describe('Books', () => {
         genre: ['5f67ed4995600d1abe808a23'],
       });
       chai.request(server)
-        .post('/catalog/book/5fdfcc983c0ecc0afbfa7372/update')
+        .post('/catalog/book/5fdffc3c15ee3e0df5ed8008/update')
         .send(book)
         .end((err, res) => {
           res.should.have.status(200);
@@ -62,10 +62,10 @@ describe('Books', () => {
   describe('Delete a book', () => {
     it('It should remove a book given the id', (done) => {
       const book = {
-        id: '5fdb998b916a3e51faa9cfc1',
+        id: '5fdffc3c15ee3e0df5ed8008',
       };
       chai.request(server)
-        .post('/catalog/book/5fdb998b916a3e51faa9cfc1/delete')
+        .post('/catalog/book/5fdffc3c15ee3e0df5ed8008/delete')
         .send(book)
         .end((err, res) => {
           res.should.have.status(200);
